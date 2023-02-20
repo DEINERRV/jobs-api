@@ -25,7 +25,7 @@ const authRouter = require("./routes/auth");
 const jobsRouter = require("./routes/jobs");
 
 // settings
-app.set("port",3000);
+app.set("port",process.env.PORT || 3000);
 app.set("appName","Job API");
 app.set("trust proxy",1);
 
